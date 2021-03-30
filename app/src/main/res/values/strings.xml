@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="logo_text">Tic Tac Toe</string>
+    <string name="start">start</string>
+    <string name="credits">credits</string>
+    <string name="author_name">Klims Klimovs</string>
+    <string name="author_code">191RDB020</string>
+    <string name="author_uni">RTU</string>
+    <string name="pvp">PvP</string>
+    <string name="pve">PvE</string>
+    <string name="player_setup_title">Enter your name</string>
+    <string name="player1_label">Player 1</string>
+    <string name="player2_label">Player 2</string>
+    <string name="start_button">START</string>
+    <string name="home_button">MAIN MENU</string>
+    <string name="playagain_button">Play Again</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gameScreenActivity">
+
+    <TextView
+        android:id="@+id/curPlayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/playag_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="playAgButtonClick"
+            android:text="@string/playagain_button"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/mmenu_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:onClick="homeButtonClick"
+            android:text="@string/home_button"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/playag_button"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/curPlayName">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/button00"
+                android:layout_width="@dimen/sbutton_size"
+                android:layout_height="@dimen/sbutton_size"
+                android:layout_margin="@dimen/sbutton_margin"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button01"
+                android:layout_width="@dimen/sbutton_size"
+                android:layout_height="@dimen/sbutton_size"
+                android:layout_margin="@dimen/sbutton_margin"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button02"
+                android:layout_width="@dimen/sbutton_size"
+                android:layout_height="@dimen/sbutton_size"
+                android:layout_margin="@dimen/sbutton_margin"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/button10"
+                android:layout_width="@dimen/sbutton_size"
+                android:layout_height="@dimen/sbutton_size"
+                android:layout_margin="@dimen/sbutton_margin"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button11"
+                android:layout_width="@dimen/sbutton_size"
+                android:layout_height="@dimen/sbutton_size"
+                android:layout_margin="@dimen/sbutton_margin"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button12"
+                android:layout_width="@dimen/sbutton_size"
+                android:layout_height="@dimen/sbutton_size"
+                android:layout_margin="@dimen/sbutton_margin"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/button20"
+                android:layout_width="@dimen/sbutton_size"
+                android:layout_height="@dimen/sbutton_size"
+                android:layout_margin="@dimen/sbutton_margin"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button21"
+                android:layout_width="@dimen/sbutton_size"
+                android:layout_height="@dimen/sbutton_size"
+                android:layout_margin="@dimen/sbutton_margin"
+                android:scaleType="fitCenter" />
+
+            <ImageButton
+                android:id="@+id/button22"
+                android:layout_width="@dimen/sbutton_size"
+                android:layout_height="@dimen/sbutton_size"
+                android:layout_margin="@dimen/sbutton_margin"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
